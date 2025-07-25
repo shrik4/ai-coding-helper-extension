@@ -3,7 +3,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     // Async function for OpenRouter fetch
     (async () => {
       try {
-        const apiKey = "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";
+        const apiKey = "your api key";
         const prompt = `Help me solve this coding problem:\n\n${request.problem}`;
 
         const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
